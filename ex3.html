@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #ff3c34;
+            color: white;
+            padding: 10px 7px 10px 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+
+        .highlight {
+            color: red;
+        }
+
+        .parent {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #087cfc;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent-label {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: white;
+        }
+
+        .child {
+            width: 80%;
+            height: 120px;
+            background-color: #38c45c;
+            color: white;
+            display: flex;
+            border-radius: 5px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: orange;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">Fixed</div>
+    <div class="container">
+        <h1>UTHINK CSS <a class="highlight">ASSIGNMENT 3</a></h1>
+        <h2><a class="highlight">Position</a> Assignment</h2>
+        <div class="parent">
+            <a class="parent-label">Parents</a>
+            <a class="child">Child</a>
+            <a class="absolute">Absolute</a>
+        </div>
+    </div>
+</body>
+</html>
